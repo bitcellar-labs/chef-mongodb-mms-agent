@@ -55,8 +55,7 @@ end
 # runit
 runit_service 'mms-agent' do
   template_name 'mms-agent'
-  cookbook 'mongodb-mms-agent'
-  run_restart false
+  cookbook 'mms-agent'
   options({
     :user => node[:mongodb][:user],
     :group => node[:mongodb][:group]
